@@ -1,12 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {RiHome7Fill,RiUser3Fill,RiLinkedinBoxFill,RiGithubFill} from 'react-icons/ri'
 import {MdEmail} from 'react-icons/md'
 import './index.scss'
+import logo from '../../assets/images/logo.svg'
+
 const Sidebar = () => {
 return(
    <div className="sidebar">
-       {/* <img src={logo} alt='logo'/> */}
+     <Link className='logo' to='/'>
+     <img src={logo} alt='logo'/>
+     <span> MaramMs</span>
+     </Link>
        <nav>
            <NavLink exact='true' activeclassname='active' to ='/'>
             <RiHome7Fill />

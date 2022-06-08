@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders';
 
 import './index.scss'
+import Logo from './Logo';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -40,7 +41,7 @@ const Home = () => {
             <br />
             <span className={`${letterClass}_14`}>I</span>
             <span className={`${letterClass}_15`}>'m </span>
-            {/* <img src={logo} alt='developer'/> */}
+            <Logo />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}

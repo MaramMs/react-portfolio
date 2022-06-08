@@ -6,7 +6,23 @@
   height: 100%;
   min-height: 500px;
   z-index: 3;
-
+.logo{
+  display: block;
+  padding: 8px 0;
+  a.logo{
+    text-decoration: none;
+  }
+  span{
+    text-decoration: none;
+    color: #ffd700;
+  }
+  img{
+    display: block;
+    margin: 50px auto 0px auto;
+    width: 100%;
+    height:auto;
+  }
+}
   nav {
     display: block;
     position: absolute;
